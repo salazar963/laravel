@@ -23,6 +23,8 @@ class ApiAuthController extends Controller
             return response()->json(['error' => 'Error_autenticacion'], 500);
         }
 
-        return response()->json(compact('token'));
+        $user = JWTAuth::toUser($token); // Almacena el usuario
+
+        return response()->json(compact('token', 'user'));
     }
 }
