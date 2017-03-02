@@ -45,3 +45,9 @@ Route::delete('libros/{id}', "LibroController@destroy");
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::group(['middleware' => 'cors'], function() {
+	Route::post('/authLogin', 'ApiAuthController@userAuth');
+});
+
