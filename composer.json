@@ -9,7 +9,9 @@
         "laravel/framework": "5.1.*", 
         "laravelcollective/html": "5.1.*",
         "tymon/jwt-auth": "^0.5.10",
-        "barryvdh/laravel-cors": "^0.8.6"
+        "barryvdh/laravel-cors": "^0.8.6",
+		"zizaco/entrust": "dev-laravel-5",
+		"maatwebsite/excel": "~2.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

@@ -151,6 +151,9 @@ return [
 
         Barryvdh\Cors\ServiceProvider::class,
 
+        Zizaco\Entrust\EntrustServiceProvider::class,
+
+        Maatwebsite\Excel\ExcelServiceProvider::class,
         ],
 
     /*
@@ -205,6 +208,10 @@ return [
 
     'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
     'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
+
+    'Entrust'   => \Zizaco\Entrust\EntrustFacade::class,
+
+    'Excel' => Maatwebsite\Excel\Facades\Excel::class,
 
     ],
 

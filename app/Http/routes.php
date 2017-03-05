@@ -36,11 +36,15 @@ Route::resource('libro', 'LibroController');
 
 */
 
-Route::get('libros', "LibroController@index");
+/*Route::get('libros', "LibroController@index");
 Route::get('libros/{id}', "LibroController@show");
 Route::post('libros', "LibroController@store");
 Route::put('libros/{id}', "LibroController@update");
-Route::delete('libros/{id}', "LibroController@destroy");
+Route::delete('libros/{id}', "LibroController@destroy");*/
+
+Route::post('/encuesta', 'RequerimientoController@save'); // Crear encuesta
+Route::get('/encuesta', "RequerimientoController@listarEncuestas"); // Listar encuesta 
+Route::get('/encuesta/{id}', "RequerimientoController@show"); // Ver encuesta
 
 Route::get('/', function () {
     return view('welcome');

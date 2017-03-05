@@ -1,0 +1,16 @@
+Laravel 
+Angular
+
+1 Marzo
+
+
+Frente de Diseño 
+
+Material Design
+Angular -> Directivas-----
+Laravel
+
+Segundo Frente -> Seguridad a todo nivel
+Tercer Frente -> Rendimiento -> Optimizar las consultas, servicios
+
+
